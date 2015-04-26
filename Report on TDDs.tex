@@ -28,8 +28,8 @@ When I first commenced writing a TDD I learned some HTML and programmed in HTML 
 \begin{enumerate}
 	\item HTML, CSS, and Javascript
 	\item Markdown, augmented by HTML and CSS
-	\item IPython Notebook
 	\item Python
+	\item IPython Notebook
 	\item Latex
 \end{enumerate}
 
@@ -45,9 +45,15 @@ By using the best tool for the job, we can save developers time during the desig
 	\subsubsection{Advantages}
 		HTML documents have the advantage that anyone can easily view them, since everyone has a Browser.  Also, most programmers have some familiarity with HTML, and many text editors/IDEs have good support for HTML.  Also, KompoZer has an excellent WYSIWYG interface to HTML that produces very read-able HTML.  HTML, CSS, and Javascript are what we make webpages out of, so they provide great flexibility!
 	\subsubsection{Disadvantages}
-		With all its tags, HTML code is harder to read than Markdown.  Aided by Javascript, it can syntax highlight code when rendered, but not during editing.
-	
-	
+		With all its tags, HTML code is harder to read and edit than Markdown (See \ref{HTML code}).  Aided by Javascript, it can syntax highlight code when rendered, but not during editing.  The main disadvantage of HTML, therefore, is that it isn't as easy to edit as other formats, particularly when editing code.
+		\begin{figure}[h]
+			\centering
+			\includegraphics[scale=.25]{HTML_code.PNG}
+			\caption{Some HTML code}
+			\label{HTML code}
+		\end{figure}
+		
+
 \subsection{Markdown - Qualifies}
 	\subsubsection{Advantages}
 	Markdown has one aspect in which it really shines: The read-ability of its code.  This would make working directly with the code, code reviews, and diffs in version control systems easier.  Also, when the syntax of markdown is insufficient, one can augment it with HTML, CSS, etc.  Github flavored markdown can also easily do syntax highlighting of code.  Finally, Stackedit and MarkdownPad are both excellent mardown editors that support Github flavored markdown, show instant preview, and allow you to work offline (See Fig. \ref{StackEdit}).
@@ -63,12 +69,14 @@ By using the best tool for the job, we can save developers time during the desig
 	Markdown has drawbacks. It would need to be converted to HTML or a special program is needed for viewing nicely rendered documents.  There isn't the same support for markdown in text editors and IDEs as is available for HTML/CSS alone.  Also, there are multiple flavours of markdown, which could lead to compatibility problems unless a flavour, such as Github flavored markdown, were chosen as the standard within FINCAD.
 
 
-\subsection{IPython Notebook - Qualifies}
+\subsection{Python - Qualifies}
+	Python is already used as a complement to TDDs, though not as a TDD itself.
 	\subsubsection{Advantages}
+	The biggest advantage of using a Python file for at least part of a TDD is that editors/IDEs can provide syntax highlighting and autocompletion of the code.
+	
 	\subsubsection{Disadvantages}
-	
-	
-	
+	The major dis-advantage is the lack of flexibility.  Creating titles in a larger font and tables appears to be impossible.
+
 
 \subsection{Latex - Eliminated}
 	\subsubsection{Advantages}
@@ -83,16 +91,27 @@ By using the best tool for the job, we can save developers time during the desig
 	For this reason, because I have not heard of TDDs ever being written using Latex, and because I am not that familiar with Latex myself, \emph{I exclude Latex from consideration in the remainder of this document}.
 
 
+\subsection{IPython Notebook - Qualifies}
+	\subsubsection{Advantages}
+		IPython Notebook is incredibly flexible jack-of-all-trades.  You can type python code, with syntax highlighting and autocomplete support, and run it.  You can include markdown, HTML/CSS, and Latex code and render it (See Fig. \ref{IPython}).  You can export to HTML, Latex, and other formats.  You can even with a simple command copy the python, Markdown, Latex, or HTML code from a file into IPython Notebook.
+		
+		\begin{figure}[h]
+			\centering
+			\includegraphics[scale=1]{IPython_Notebook.PNG}
+			\caption{Editing an IPython Notebook Through the Browser Interface}
+			\label{IPython}
+		\end{figure}
+		
+		Finally, IPython may be useful more generally.  IPython Notebook's interactive computing abilities, such as for building workbooks using WDL, making it a useful tool to learn more generally.  Also, IPython can be used as an excellent terminal and shell scripting language, allowing you to almost seamlessly mix Python and Shell commands.
+	\subsubsection{Disadvantages}
+		While IPython Notebook is a jack-of-all-trades, it is a master of none.  I would definitely prefer to edit HTML in KompoZer, Markdown in StackEdit, Latex in TeXstudio, and Python in PyCharm.  And while IPython allows you to easily copy files edited in these other programs into you IPython Notebook, I don't know how to completely automate this.
+		
 
 
-	
-
-\section{Technical Details}
+\section{Comparison and Discussion}
 Let's first consider some simple examples of using these different languages/tools
 
 \subsection{HTML}
-\includegraphics[scale=.25]{HTML_code.PNG}
-
 As discussed, we have the following requirements and desiderata for creating TDDs:
 
 \begin{enumerate}
