@@ -69,13 +69,13 @@ By using the best tool for the job, we can save developers time during the desig
 	Markdown has drawbacks. It would need to be converted to HTML or a special program is needed for viewing nicely rendered documents.  There isn't the same support for markdown in text editors and IDEs as is available for HTML/CSS alone.  Also, there are multiple flavours of markdown, which could lead to compatibility problems unless a flavour, such as Github flavored markdown, were chosen as the standard within FINCAD.
 
 
-\subsection{Python - Qualifies}
+\subsection{Python - Eliminated}
 	Python is already used as a complement to TDDs, though not as a TDD itself.
 	\subsubsection{Advantages}
 	The biggest advantage of using a Python file for at least part of a TDD is that editors/IDEs can provide syntax highlighting and autocompletion of the code.
 	
 	\subsubsection{Disadvantages}
-	The major dis-advantage is the lack of flexibility.  Creating titles in a larger font and tables appears to be impossible.
+	The major dis-advantage is the lack of flexibility.  Creating titles in a larger font and tables appears to be impossible.  Python code is a useful complement or include for a TDD, but does not provide sufficient flexibility to be used alone.
 
 
 \subsection{Latex - Eliminated}
@@ -119,6 +119,8 @@ By using the best tool for the job, we can save developers time during the desig
 
 
 \section{Comparison and Discussion}
+We have 3 remaining options that qualify so far: HTML, Markdown, and IPython Notebook.
+
 We have the following requirements and desiderata for creating TDDs:
 
 \begin{enumerate}
@@ -136,9 +138,16 @@ We have the following requirements and desiderata for creating TDDs:
 		\end{enumerate}
 \end{enumerate}
 
-\subsection{Comparison of HTML, Kompozer, Markdown, and IPython along these dimensions}
+Out of the remaining options, all of them are amenable to code review and version control because they are stored in plain text.  Markdown is the easiest to do diffs and code review because it is easiest to work with as plain text.  IPython is the hardest.  However, code reviews are usually only comprise a small part near the end of the design process, in which the design is officially signed off on.  Working with diffs probably comprise only a small fraction of the time spent working on a TDD.  Hence the ease of secondary importance for diffs and version control.
 
-We now compare how HTML, Kompozer, Markdown, and IPython along each of these dimensions:
+As a software engineering firm, I'm sure we will be able to easily surmount any difficulties with viewing whatever options we choose.  Since they can all render HTML/CSS, I'm sure that the remaining options all have sufficient expressive power.
+
+This leaves us with 2 dimensions along which to differentiate the options: Familiarity and ease of use.
+
+
+\subsection{Comparison of HTML, Markdown, and IPython along these dimensions}
+
+We now compare how HTML, Markdown, and IPython along each of these dimensions:
 
 	\subsubsection{Amenable to code review and version control}
 	
