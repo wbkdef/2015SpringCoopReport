@@ -106,13 +106,20 @@ By using the best tool for the job, we can save developers time during the desig
 	\subsubsection{Disadvantages}
 		While IPython Notebook is a jack-of-all-trades, it is a master of none.  I would definitely prefer to edit HTML in KompoZer, Markdown in StackEdit, Latex in TeXstudio, and Python in PyCharm.  And while IPython allows you to easily copy files edited in these other programs into you IPython Notebook, I don't know how to completely automate this.
 		
+		Furthermore, while IPython Notebook is stored as a JSON text file and can thus be diffed and code-reviewed,  This JSON file has lots of boiler-plate text that makes it difficulte to read (See Fig. \ref{IPython_JSON})
+		
+		\begin{figure}[h]
+			\centering
+			\includegraphics[scale=.5]{IPython_Notebook_code.PNG}
+			\caption{The JSON file underlying the IPython Notebook of Figure \ref{IPython}}
+			\label{IPython_JSON}
+		\end{figure}
+		
+		
 
 
 \section{Comparison and Discussion}
-Let's first consider some simple examples of using these different languages/tools
-
-\subsection{HTML}
-As discussed, we have the following requirements and desiderata for creating TDDs:
+We have the following requirements and desiderata for creating TDDs:
 
 \begin{enumerate}
 	\item Requirements:
@@ -125,8 +132,7 @@ As discussed, we have the following requirements and desiderata for creating TDD
 			\item Familiar
 			\item Easy to use
 			\item Easy to view
-			\item Capable of expressing the ideas that we wish to convey
-			
+			\item Capable of expressing the ideas that we wish to convey			
 		\end{enumerate}
 \end{enumerate}
 
