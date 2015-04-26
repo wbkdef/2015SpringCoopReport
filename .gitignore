@@ -1,0 +1,5 @@
+*.pdf
+.ipynb*
+*.aux
+*.log
+*.gz
