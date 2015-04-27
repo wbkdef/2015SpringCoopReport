@@ -3,7 +3,7 @@
 \usepackage{graphicx}
 
 %opening
-\title{The Best Languages and Tools to use for TDDs at FINCAD}
+\title{The Best Option for Writing TDDs at FINCAD}
 \author{Bruce Krayenhoff}
 
 \begin{document}
@@ -145,23 +145,35 @@ As a software engineering firm, I'm sure we will be able to easily surmount any 
 This leaves us with 2 dimensions along which to differentiate the options: Familiarity and ease of use.
 
 
-\subsection{Comparison of HTML, Markdown, and IPython along these dimensions}
+\subsection{Familiarity}
+HTML is probably the most familiar option, although many programmers are probably familiar with markdown 
+(it is used for the FINCAD wiki!).  IPython would involve a learning curve for most.  In fact, I discussed 
+IPython Notebook with one of the quants that is using it, and he was not familiar some functionality that 
+would have been very useful for him!
 
-We now compare how HTML, Markdown, and IPython along each of these dimensions:
+\subsection{Ease of Use}
+The ease of use depends on the task you want to accomplish:
+\begin{description}
+	\item[python] 
+		If you want syntax highlighted Python code, IPython is easiest because it provides autocomplete and syntax highlighting while 
+		you edit rather than applied later, or can easily import from a file created in your favorite python editor.
+	\item[Rich Text] 
+		If you want to create bold and italisized text with different font sizes through a WYSIWYG interface, HTML or Markdown is best
+	\item[Colors and Highlighting] 
+		If you want to view font colors and highlighting as you edit, a good HTML editor like KompoZer is your best bet.
+	\item[Emacs]
+		If you want to stick with you favorite text editor such as Emacs, Markdown's easy-to-read syntax may be your best choice.
+\end{description}
+	
 
-	\subsubsection{Amenable to code review and version control}
-	
-		
-	
-	\subsubsection{Familiar}
-	
-	\subsubsection{Easy to use}
-	
-	\subsubsection{Easy to view}
-	
-	\subsubsection{Capable of expressing the ideas that we wish to convey}
 
 
 
+\section{Recommendations}
+	IPython and possibly Markdown have significant advantages over HTML, and also some drawbacks, some of which may not be clear at this point.  
+	IPython also requires a moderate time investment to learn.  Give this cost and the uncertainty of the benefits, it is premature to encourage 
+	everyone to start using an option other than HTML.  However given the amount of time that is spent in design and the possibly significant 
+	advantages of IPython, experimentation by early adopters should be encouraged by raising awareness of these options.
+	
+	
 \end{document}
-, however code reviews are usually only comprise a small part near the end of the design process, in which the design is officially signed off on.
